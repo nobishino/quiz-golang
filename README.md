@@ -26,7 +26,7 @@ Learn Golang by solving fun quiz
 - Source code representation
 - Lexical elements
 - Constants
-- Variables
+- [Variables](problems/06_Variables/01_Variables.md)
 - Types
   - [Method Sets](problems/types/01_Method_Sets.md)
 - Properties of types and values
