@@ -32,6 +32,7 @@ Learn Golang by solving fun quiz
 - Properties of types and values
 - Blocks
 - Declarations and scope
+  - [Iota](problems/10_Declarations_and_scope/07_Iota.md)
 - Expressions
   - [Calls](problems/expressions/12_Calls.md)
 - Statements
