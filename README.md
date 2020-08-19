@@ -28,7 +28,18 @@ Learn Golang by solving fun quiz
 - Constants
 - [Variables](problems/06_Variables/01_Variables.md)
 - Types
-  - [Method Sets](problems/types/01_Method_Sets.md)
+  - [Method Sets](problems/07_Types/01_Method_Sets.md)
+  - [Boolean types]
+  - [Numeric types]
+  - [String types]
+  - [Array types]
+  - [Slice types]
+  - [Struct types]
+  - [Pointer types]
+  - [Function types]
+  - [Interface types]
+  - [Map types](problems/07_Types/11_Map_Types.md)
+  - [Channel types]
 - Properties of types and values
 - Blocks
 - Declarations and scope
