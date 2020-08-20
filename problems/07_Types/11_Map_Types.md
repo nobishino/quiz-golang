@@ -138,8 +138,89 @@ func main() {
 }
 ```
 
+<details>
+
 > If the key type is an interface type, these comparison operators must be defined for the dynamic key values; failure will cause a run-time panic.
 
 - https://golang.org/ref/spec#Comparison_operators
 
 > Interface values are comparable. Two interface values are equal if they have identical dynamic types and equal dynamic values or if both have value nil.
+
+</details>
+
+## Q5
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	m := make(map[interface{}]int)
+	var a [3]int
+	var b [3]int
+	m[a] = 1
+	fmt.Println(m[b])
+}
+```
+
+<details>
+answer: 1
+
+
+- https://golang.org/ref/spec#Comparison_operators
+
+> Interface values are comparable. Two interface values are equal if they have identical dynamic types and equal dynamic values or if both have value nil.
+
+</details>
+
+## Q5
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	m := make(map[interface{}]int)
+	var a [3]int
+	var b [3]int
+	m[a] = 1
+	fmt.Println(m[b])
+}
+```
+
+<details>
+answer: 1
+
+- https://golang.org/ref/spec#Comparison_operators
+
+> Array values are comparable if values of the array element type are comparable. Two array values are equal if their corresponding elements are equal.
+
+slice型と異なり、array型の値は比較可能です。2つの配列の値は、対応する要素がそれぞれ等しいときに等しいです。
+
+上のコードの`a, b`はいずれも`[3]int{0, 0, 0}`のような配列なので、`a==b`は`true`です。よって、出力は1となります。
+
+</details>
+
+# Q6
+
+https://play.golang.org/p/jn8_pZar43L
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	m := map[chan int]int{}
+	m[nil] = 1
+	fmt.Println(m[nil])
+}
+```
