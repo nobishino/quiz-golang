@@ -150,33 +150,7 @@ func main() {
 
 ## Q5
 
-```go
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	m := make(map[interface{}]int)
-	var a [3]int
-	var b [3]int
-	m[a] = 1
-	fmt.Println(m[b])
-}
-```
-
-<details>
-answer: 1
-
-
-- https://golang.org/ref/spec#Comparison_operators
-
-> Interface values are comparable. Two interface values are equal if they have identical dynamic types and equal dynamic values or if both have value nil.
-
-</details>
-
-## Q5
+https://play.golang.org/p/rxg-0l0lEhO
 
 ```go
 package main
@@ -207,7 +181,7 @@ slice型と異なり、array型の値は比較可能です。2つの配列の値
 
 </details>
 
-# Q6
+## Q6
 
 https://play.golang.org/p/jn8_pZar43L
 
